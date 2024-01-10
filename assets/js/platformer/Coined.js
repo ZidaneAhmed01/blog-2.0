@@ -1,13 +1,32 @@
 import GameEnv from './GameEnv.js';
 import GameObject from './GameObject.js';
 
-export class Thing1 extends GameObject {
+export class Coined extends GameObject {
     constructor(canvas, image) {
         super(canvas, image, 0);
         // Set the initial position and size
         this.size();
     }
-
+    /*
+    collisionAction() {
+            if (this.collisionData.touchPoints.other.id === "player") {
+                // Collision with the left side of the Tub
+                if (this.collisionData.touchPoints.other.left) {
+                    this.touchCoin = true;
+                    console.log("coin left")
+                    this.destroy();
+                    //window.location.reload();
+                }
+                // Collision with the right side of the Tube
+                if (this.collisionData.touchPoints.other.right) {
+                    console.log("coin right")
+                    this.touchCoin = true;
+                    this.destroy();
+                    //window.location.reload();
+                }
+            }    
+        }
+    */
     // Required, but no update action
     update() {
     }
@@ -61,4 +80,4 @@ export class Thing1 extends GameObject {
    
     }
 
-export default Thing1;
+export default Coined;
