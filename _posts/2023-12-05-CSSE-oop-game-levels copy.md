@@ -140,6 +140,7 @@ image: /images/platformer/backgrounds/hills.png
           wa: { row: 11, frames: 15 },
           wd: { row: 10, frames: 15 },
           a: { row: 3, frames: 7, idleFrame: { column: 7, frames: 0 } },
+          //mario bhop glitch
           s: { row: 11, frames: 6 },
           d: { row: 2, frames: 7, idleFrame: { column: 7, frames: 0 } }
         },
@@ -151,6 +152,7 @@ image: /images/platformer/backgrounds/hills.png
           wa: { row: 9, frames: 15 },
           wd: { row: 9, frames: 15 },
           a: { row: 1, frames: 15, idleFrame: { column: 7, frames: 0 } },
+          //monkey turns into shooting star
           s: {row: 5, frames: 15},
           d: { row: 0, frames: 15, idleFrame: { column: 7, frames: 0 } }
         },

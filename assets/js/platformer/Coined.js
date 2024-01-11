@@ -7,7 +7,7 @@ export class Coined extends GameObject {
         // Set the initial position and size
         this.size();
     }
-    /*
+    
     collisionAction() {
             if (this.collisionData.touchPoints.other.id === "player") {
                 // Collision with the left side of the Tub
@@ -26,7 +26,7 @@ export class Coined extends GameObject {
                 }
             }    
         }
-    */
+    
     // Required, but no update action
     update() {
     }
