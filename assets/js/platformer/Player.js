@@ -154,23 +154,18 @@ export class Player extends Character{
         if (this.collisionData.touchPoints.other.id === "enemy") {
             // Collision with the left side of the Enemy
             if (this.collisionData.touchPoints.other.left) {
+                console.log("dont give up now");
                 deathController.setDeath(1);
             }
             // Collision with the right side of the Enemy
             if (this.collisionData.touchPoints.other.right) {
+                console.log("dont give up now");
                 deathController.setDeath(1);
             }
             // Collision with the top of the Enemy
             if (this.collisionData.touchPoints.other.ontop) {
-                console.log("Bye Goomba");
-                deathController.setDeath(1);
-                //destroy(this.collisionData.toxuchPoints.other.ontop)
-                //this.y -= (this.bottom * .33);
-                //this.y -=10000;
-                //this.collisionData.touchPoints.other -= 10000;
-                //this.collisionData.touchPoints.other.destroy(gameObject);
-                //this.enemy.destroy();
-                //destroy(this.collisionData.touchPoints.other);
+                console.log("dont give up now");
+                deathController.setDeath(1)
             }
         }
         if (this.collisionData.touchPoints.other.id === "jumpPlatform") {

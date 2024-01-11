@@ -65,7 +65,7 @@ export class Coined extends GameObject {
             thingY = (GameEnv.innerHeight - scaledHeight) / 2.02;
         }
 
-        // Set variables used in Display and Collision algorithms
+        // Set variables used in Display and Collision 
         this.bottom = thingY + scaledHeight;
         this.collisionHeight = scaledHeight;
         this.collisionWidth = scaledWidth;

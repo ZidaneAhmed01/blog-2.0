@@ -6,7 +6,7 @@ import Player from './Player.js';
 import Coined from './Coined.js';
 import Tube from './Tube.js';
 import Enemy from './Enemy.js';
-import PlatformO from './PlatformO.js'
+import Platform1 from './Platform1.js'
 import Platform2 from './Platform2.js'
 
 
@@ -18,7 +18,7 @@ class GameLevel {
         this.backgroundImg2 = gameObject.background2?.file;
         this.backgroundImg = gameObject.background?.file;
         this.platformImg = gameObject.platform?.file;
-        this.platformOImg = gameObject.platformO?.file;
+        this.platform1Img = gameObject.platform1?.file;
         this.platform2Img = gameObject.platform2?.file;
         this.thingImg = gameObject.thing?.file; 
         this.playerImg = gameObject.player?.file;
@@ -44,8 +44,8 @@ class GameLevel {
         if (this.platformImg) {
             imagesToLoad.push(this.loadImage(this.platformImg));
         }
-        if (this.platformOImg) {
-            imagesToLoad.push(this.loadImage(this.platformOImg));
+        if (this.platform1Img) {
+            imagesToLoad.push(this.loadImage(this.platform1Img));
         }
         if (this.platform2Img) {
             imagesToLoad.push(this.loadImage(this.platform2Img));
@@ -94,12 +94,12 @@ class GameLevel {
                 new Platform(platformCanvas, loadedImages[i], platformSpeedRatio);
                 i++;
             }
-            if (this.platformOImg) {
+            if (this.platform1Img) {
                 const platformCanvas = document.createElement("canvas");
                 platformCanvas.id = "jumpPlatform";
                 document.querySelector("#canvasContainer").appendChild(platformCanvas);
                 const platformSpeedRatio = 0;
-                new PlatformO(platformCanvas, loadedImages[i], platformSpeedRatio);
+                new Platform1(platformCanvas, loadedImages[i], platformSpeedRatio);
                 i++;
             }
             if (this.platform2Img) {

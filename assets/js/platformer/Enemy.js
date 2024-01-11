@@ -30,21 +30,21 @@ export class Enemy extends Character {
         if (Math.random() < 0.006) {
             this.speed = Math.random() < 0.5 ? -this.speed : this.speed;
         }
-        /*
-        //Randomly turn Goomba into God Mode
+        
+        //Randomly turn Goomba into Gilgamesh the destroyer
         if (Math.random() < 0.01) {
             this.performGoombaSpecial();
         }
-        */
+        
         //Initially get the enemy moving
         this.x += this.speed;
         
-        //detect if the goomba is dead
+        //detect if the goomba is dead non functional for now i suppose 
         if (this.destruction === 1) {
             this.destroy();
         }
     }
-    /*
+    
     performGoombaSpecial() {
         if (!this.specialActionActive) {
             // Temporary increase in speed
@@ -71,9 +71,9 @@ export class Enemy extends Character {
             this.specialActionActive = true;
         }
     }
-*/
 
-    /* murder() {
+
+     murder() {
         let i = 1;
         let intervalId = setInterval(() => {
             if (i >= 0) {
@@ -84,7 +84,7 @@ export class Enemy extends Character {
                 clearInterval(intervalId);
             }
         }, 50);
-    } */
+    } 
     
 }
 
