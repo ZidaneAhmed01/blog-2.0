@@ -346,7 +346,7 @@ courses: { compsci: {week: 2} }
            ctx.font = "16px Arial"; // Adjust the font size and family here
            // Draw the image on the canvas at the specified coordinates (x * BLOCK, y * BLOCK)
            const image = new Image();
-            image.src = "{{ '/images/Apple.jpg' | relative_url }}"; // Replace 'image.png' with the path to your image
+            image.src = "{{ '/images/Apple.png' | relative_url }}"; // Replace 'image.png' with the path to your image
             image.onload = function() {
             ctx.drawImage(image, x * BLOCK, y * BLOCK, 16, 16);
     };

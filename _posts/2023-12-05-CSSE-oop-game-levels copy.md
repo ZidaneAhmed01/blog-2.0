@@ -13,10 +13,9 @@ image: /images/platformer/backgrounds/hills.png
     z-index: 2; /*Ensure the controls are on top*/
   }
   #toggleCanvasEffect,#background, #platform {
-  animation: fadein 2s;
+  animation: fadein 3.5s;
   }
   #startGame {
-    animation: flash 0.5s infinite;
   }
   .sidenav {
       position: fixed;
